@@ -88,7 +88,7 @@ export default function Nav() {
                       handelActiveTabs(e.currentTarget);
                     }
               }
-              href=""
+              href="#services"
               className="nav-tabs "
             >
               {t("ourServices")}

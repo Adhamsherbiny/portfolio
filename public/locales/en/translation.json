@@ -5,9 +5,71 @@
   "carrerObjective": "I am a seasoned professional web designer and developer with nearly three years of extensive experience in crafting high-quality websites and web applications. Proficient in HTML, CSS, JavaScript, and modern frameworks, I specialize in delivering responsive, user-centric designs that blend aesthetics with functionality. My passion for innovation and commitment to excellence enable me to create seamless digital experiences that meet client needs and exceed expectations.",
   "carrerName": "Adham Sherbiny",
   "ourServices": "Our Services",
+  "ourServicesDescription": "We offer a comprehensive range of professional services in web design and development, focusing on delivering innovative solutions that meet the needs of individuals and businesses. Our services include UI/UX design, digital marketing, project hosting, post-launch support, updates, and the development of custom applications for e-commerce, real estate project management, and technological solutions such as HR and inventory management systems.",
+  "services": [
+    {
+      "title": "UI/UX Design",
+      "description": "We provide user interface and user experience design services that are visually appealing and user-friendly, aligning with the latest trends in digital design. Our goals include:",
+      "points": [
+        "Enhancing User Experience: Creating interactive designs that ensure a seamless and enjoyable experience.",
+        "Brand-Aligned Design: Ensuring the design reflects the client’s brand identity.",
+        "Cross-Device Compatibility: Responsive designs that perform efficiently on smartphones, tablets, and desktops.",
+        "User Testing: Conducting tests to ensure ease of use and achievement of desired objectives."
+      ]
+    },
+    {
+      "title": "Digital Marketing",
+      "description": "We help our clients reach their target audience through integrated marketing strategies, including:",
+      "points": [
+        "Search Engine Optimization (SEO): Improving website rankings in search engine results to boost organic traffic.",
+        "Ad Campaign Management: Creating and managing ad campaigns on platforms like Google and social media.",
+        "Email Marketing: Designing customized email campaigns to enhance customer engagement.",
+        "Content Management: Creating engaging content that aligns with the brand’s goals."
+      ]
+    },
+    {
+      "title": "Project Hosting",
+      "description": "We provide reliable and secure hosting solutions to ensure optimal performance for websites and applications:",
+      "points": [
+        "Cloud Hosting: Offering flexible and scalable cloud servers.",
+        "Security: Protecting websites from cyber threats using SSL certificates and advanced firewalls.",
+        "Technical Support: 24/7 support to resolve any technical issues.",
+        "Backup Services: Regular data backups to ensure business continuity."
+      ]
+    },
+    {
+      "title": "Post-Launch Support",
+      "description": "We ensure the continued success of your project after launch through:",
+      "points": [
+        "Regular Maintenance: Updating content and software to maintain optimal performance.",
+        "Performance Analysis: Monitoring website performance using analytics tools to identify areas for improvement.",
+        "Ongoing Updates: Making adjustments based on client feedback or market changes."
+      ]
+    },
+    {
+      "title": "Custom Application Development",
+      "description": "We offer tailored application development solutions to meet the needs of various sectors, including:",
+      "points": [
+        "E-Commerce Applications: Designing and developing fully integrated e-commerce apps that support online payments, inventory management, and a seamless shopping experience.",
+        "Real Estate Project Management Apps: Custom applications for managing real estate projects, including sales tracking, client management, and financial reporting.",
+        "HR Management Applications: Solutions for managing employees, attendance, and payroll efficiently.",
+        "Inventory Management Applications: Programs like 'Cashier' for managing inventory and sales in retail with ease and accuracy.",
+        "Innovative Technological Applications: Custom solutions for managing technological projects, such as resource and process management systems."
+      ]
+    }
+  ],
+  "whyChooseUs": {
+    "title": "Why Choose Our Services?",
+    "points": [
+      "Professionalism: A team of highly experienced designers and developers.",
+      "Customization: Solutions tailored to meet each client’s unique needs.",
+      "Quality: Commitment to delivering high-quality products that meet the highest standards.",
+      "Continuous Support: A dedicated support team available to ensure client satisfaction."
+    ]
+  },
   "ourProjects": "Our Projects",
-  "contactUs": "Contact US",
+  "contactUs": "Contact Us",
   "login": "Login",
-  "register": "Singn Up",
+  "register": "Sign Up",
   "bookNow": "Book Now"
 }

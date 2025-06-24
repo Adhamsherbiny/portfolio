@@ -3,6 +3,7 @@
 import { useLanguageInitializer } from "./hooks/UseTranslations";
 import HomeComponent from "./components/common/HomeComponent";
 import Loading from "./components/common/Loading";
+import OurServices from "./components/common/OurServices";
 
 export default function Home() {
   const { isMounted } = useLanguageInitializer();
@@ -12,6 +13,7 @@ export default function Home() {
     return (
       <div className="main-page">
         <HomeComponent />
+        <OurServices />
       </div>
     );
   }

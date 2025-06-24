@@ -1,6 +1,7 @@
 .homeComponent {
   width: 100%;
   scroll-margin-top: 80px;
+  margin-bottom: 100px;
   .carrer-objective {
     width: 100%;
     display: flex;
@@ -19,6 +20,7 @@
     .text {
       display: flex;
       flex-direction: column;
+      padding: 2rem;
       h1 {
         font-size: 2rem;
         color: var(--darkened-color);

@@ -1,0 +1,133 @@
+// .ourServices {
+//   width: 100%;
+//   scroll-margin-top: 80px;
+//   margin-bottom: 100px;
+//   .services-container {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     .service {
+//       width: 250px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//     }
+//   }
+// }
+
+.ourServices {
+  width: 100%;
+  scroll-margin-top: 80px;
+  margin-bottom: 100px;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--darkened-color);
+  }
+
+  p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: var(--dark-mode);
+  }
+
+  .services-container {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .service {
+      width: calc(100% / 2 - 1.5rem);
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--main-color);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--darkened-color);
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--dark-mode);
+        margin-bottom: 1rem;
+        text-align: start;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-inline-start: 1.2rem;
+        margin-bottom: 0;
+        text-align: start;
+
+        li {
+          font-size: 0.9rem;
+          color: var(--dark-mode);
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  // دعم RTL للغة العربية
+  [dir="rtl"] & {
+    text-align: center;
+
+    .services-container {
+      .service {
+        p {
+          text-align: start;
+        }
+
+        ul {
+          padding-inline-start: 0;
+          padding-inline-end: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    // padding: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+
+      .service {
+        width: 100%;
+        padding: 1.5rem;
+      }
+    }
+  }
+}
