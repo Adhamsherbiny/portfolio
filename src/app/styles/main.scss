@@ -6,6 +6,11 @@
   box-sizing: border-box;
   user-select: none;
   outline: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 body {
@@ -18,10 +23,78 @@ body {
 .main-layout {
   width: 100%;
   height: 100vh;
+  overflow-y: auto;
   position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 40%;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(0, 109, 218, 0.096);
+    filter: blur(100px);
+    z-index: -1;
+  }
   .pages {
     position: relative;
-    top: 70px;
+    top: 80px;
+    padding-inline: 2rem;
+  }
+  footer {
+    position: relative;
+    top: 100%;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: var(--text-color);
+    border-top: 1px solid var(--main-color);
+    // box-shadow: 0 0 10px var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    div {
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        min-width: 200px;
+        max-width: 300px;
+        li {
+          .acc-logo {
+            color: var(--dark-mode);
+            font-size: 2rem;
+            cursor: pointer;
+            &:hover {
+              color: var(--main-color);
+            }
+          }
+        }
+      }
+    }
+    .signature {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      p {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--dark-mode);
+      }
+    }
   }
 }
 // loading
@@ -112,41 +185,33 @@ body {
   left: 0;
   width: 100%;
   display: flex;
-  background-color: var(--text-color);
+  // background-color: var(--text-color);
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.2);
   justify-content: space-between;
   align-items: center;
   padding: var(--main-pad-margin);
-  // box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-  //   rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-  //   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   box-shadow: 0px 0px 10px var(--main-color);
+  z-index: 1000;
   .logo {
-    width: 40px;
-    .pic {
-      width: 100%;
-      img {
-        background: linear-gradient(
-          45deg,
-          var(--main-color),
-          var(--lightened-color)
-        );
-        width: 50px;
-        height: 50px;
-        border-radius: var(--main-border-radius);
-      }
-    }
+    color: var(--dark-mode);
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 1rem;
   }
 
   .tabs {
+    max-width: 1000px;
     ul {
       display: flex;
       justify-content: space-around;
       align-items: center;
       li {
         list-style: none;
+
         .nav-tabs {
           text-decoration: none;
-          color: var(--main-color);
+          color: var(--dark-mode);
           font-size: var(--main-font-size);
           font-weight: bold;
           padding: var(--main-pad-margin);
@@ -155,6 +220,10 @@ body {
             color: var(--text-color);
             background-color: var(--darkened-color);
           }
+        }
+        .active {
+          color: var(--text-color);
+          background-color: var(--darkened-color);
         }
       }
     }
@@ -247,6 +316,13 @@ body {
 }
 
 // media queries
+
+@media screen and (max-width: 600px) {
+  .notification {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1076px) {
   .navigation {
     flex-direction: column;
@@ -257,7 +333,7 @@ body {
     .logo {
       position: absolute;
       left: 20px;
-      top: 10px;
+      top: 25px;
     }
     .tabs {
       position: relative;
@@ -279,6 +355,15 @@ body {
       position: absolute;
       right: 10px;
       top: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 331px) {
+  .navigation {
+    .logo {
+      top: 26px;
+      font-size: 0.75rem;
     }
   }
 }

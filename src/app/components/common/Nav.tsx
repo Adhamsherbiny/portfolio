@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -17,6 +17,33 @@ import openNavigation from "@/app/utils/OpenNav";
 export default function Nav() {
   const { t } = useTranslation();
   const { isMounted } = useLanguageInitializer();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handelActiveTabs = (tabClick: any) => {
+    const tabs = document.querySelectorAll(".nav-tabs");
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tabClick.classList.add("active");
+  };
+  function isMobile() {
+    if (window) {
+      if (window.innerWidth < 1076) {
+        console.log("mobile");
+        setIsOpen(true);
+      } else {
+        console.log("not mobile");
+        setIsOpen(false);
+      }
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", isMobile);
+    return () => {
+      window.removeEventListener("resize", isMobile);
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     ChangeMode();
@@ -27,43 +54,104 @@ export default function Nav() {
   return (
     <nav id="navigation" className="navigation">
       <div className="logo">
-        <div className="pic">
-          <img src="/bird-prey_15707391.png" alt="logo" />
-        </div>
+        <h3>{t("websiteName")}</h3>
       </div>
       <div className="tabs">
         <ul>
           <li>
-            <Link href="" className="nav-tabs">
+            <Link
+              onClick={
+                isOpen
+                  ? (e) => {
+                      handelActiveTabs(e.currentTarget);
+                      openNavigation();
+                    }
+                  : (e) => {
+                      handelActiveTabs(e.currentTarget);
+                    }
+              }
+              href="#home"
+              className="nav-tabs active"
+            >
               {t("mainPage")}
             </Link>
           </li>
           <li>
-            <Link href="" className="nav-tabs">
-              {t("contactUs")}
-            </Link>
-          </li>
-          <li>
-            <Link href="" className="nav-tabs">
+            <Link
+              onClick={
+                isOpen
+                  ? (e) => {
+                      handelActiveTabs(e.currentTarget);
+                      openNavigation();
+                    }
+                  : (e) => {
+                      handelActiveTabs(e.currentTarget);
+                    }
+              }
+              href=""
+              className="nav-tabs "
+            >
               {t("ourServices")}
             </Link>
           </li>
           <li>
-            <Link href="" className="nav-tabs">
+            <Link
+              onClick={
+                isOpen
+                  ? (e) => {
+                      handelActiveTabs(e.currentTarget);
+                      openNavigation();
+                    }
+                  : (e) => {
+                      handelActiveTabs(e.currentTarget);
+                    }
+              }
+              href=""
+              className="nav-tabs"
+            >
               {t("ourProjects")}
             </Link>
           </li>
           <li>
-            <Link href="" className="nav-tabs">
+            <Link
+              onClick={
+                isOpen
+                  ? (e) => {
+                      handelActiveTabs(e.currentTarget);
+                      openNavigation();
+                    }
+                  : (e) => {
+                      handelActiveTabs(e.currentTarget);
+                    }
+              }
+              href=""
+              className="nav-tabs"
+            >
+              {t("contactUs")}
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={
+                isOpen
+                  ? (e) => {
+                      handelActiveTabs(e.currentTarget);
+                      openNavigation();
+                    }
+                  : (e) => {
+                      handelActiveTabs(e.currentTarget);
+                    }
+              }
+              href=""
+              className="nav-tabs"
+            >
               {t("bookNow")}
             </Link>
           </li>
         </ul>
       </div>
-      <div className="btns">
-        <button className="btn">{t("login")}</button>
-        <button className="btn">{t("register")}</button>
-      </div>
+
       <div className="nav-icons">
         <FontAwesomeIcon
           className="theme"

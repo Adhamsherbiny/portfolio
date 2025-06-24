@@ -1,12 +1,13 @@
 /* variables */
 
 :root {
-  --main-color: #00674f;
-  --secondary-color: #3ebb9e;
-  --darkened-color: #0a3c30;
-  --lightened-color: #73e6cb;
+  --main-color: #1f2937;
+  --secondary-color: #030712;
+  --darkened-color: #374151;
+  --lightened-color: #4b5563;
   --text-color: white;
-  --dark-mode: black;
+  --dark-mode: #030712;
+  --marker-color: rebeccapurple;
   --main-pad-margin: 0.5rem 1rem;
   --main-border: 2px solid --main-color;
   --main-border-radius: 0.5rem;

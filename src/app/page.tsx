@@ -1,10 +1,18 @@
 "use client";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { useLanguageInitializer } from "./hooks/UseTranslations";
+import HomeComponent from "./components/common/HomeComponent";
+import Loading from "./components/common/Loading";
 
 export default function Home() {
-  const { t } = useTranslation();
   const { isMounted } = useLanguageInitializer();
-  if (!isMounted) return null;
-  return <div>{t("mainPage")}</div>;
+  if (!isMounted) {
+    return <Loading />;
+  } else {
+    return (
+      <div className="main-page">
+        <HomeComponent />
+      </div>
+    );
+  }
 }
