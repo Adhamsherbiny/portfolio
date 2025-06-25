@@ -106,10 +106,10 @@ export default function Nav() {
                       handelActiveTabs(e.currentTarget);
                     }
               }
-              href=""
+              href="#technologies"
               className="nav-tabs"
             >
-              {t("ourProjects")}
+              {t("technologies")}
             </Link>
           </li>
           <li>
@@ -127,7 +127,7 @@ export default function Nav() {
               href=""
               className="nav-tabs"
             >
-              {t("contactUs")}
+              {t("ourProjects")}
             </Link>
           </li>
 

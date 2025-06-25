@@ -28,7 +28,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: var(--darkened-color);
+    color: var(--lightened-color);
   }
 
   p {
@@ -53,20 +53,25 @@
       flex-direction: column;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border: 1px solid var(--main-color);
+      border: 1px solid var(--lightened-color);
       padding: 1.5rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      .logos-container {
+        .logos {
+          font-size: 2rem;
+          color: var(--lightened-color);
+          // background-color: white;
+          padding: 1rem;
+          border: 1px solid var(--lightened-color);
+          border-radius: 12px;
+        }
+        margin-bottom: 5px;
       }
-
       h3 {
         font-size: 1.4rem;
         font-weight: 600;
         margin-bottom: 1rem;
-        color: var(--darkened-color);
+        color: var(--lightened-color);
       }
 
       p {
@@ -87,6 +92,10 @@
           color: var(--dark-mode);
           margin-bottom: 0.5rem;
         }
+      }
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 15px black;
       }
     }
   }

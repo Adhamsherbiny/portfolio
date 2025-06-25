@@ -131,7 +131,7 @@ body {
         45deg,
         var(--main-color),
         var(--lightened-color),
-        var(--darkened-color)
+        var(--lightened-color)
       );
       transform-origin: top left;
       animation: animateBall 2s linear infinite;
@@ -148,7 +148,7 @@ body {
       background: linear-gradient(
         45deg,
         var(--main-color),
-        var(--lightened-color, var(--darkened-color))
+        var(--lightened-color, var(--lightened-color))
       );
       transform-origin: top left;
       animation: animateBallTwo 2s linear infinite;
@@ -214,12 +214,12 @@ body {
           border-radius: var(--main-border-radius);
           &:hover {
             color: var(--text-color);
-            background-color: var(--darkened-color);
+            background-color: var(--lightened-color);
           }
         }
         .active {
           color: var(--text-color);
-          background-color: var(--darkened-color);
+          background-color: var(--lightened-color);
         }
       }
     }
@@ -241,7 +241,7 @@ body {
       background-color: var(--text-color);
       color: var(--dark-mode);
       &:hover {
-        background-color: var(--darkened-color);
+        background-color: var(--lightened-color);
         color: var(--text-color);
       }
     }
@@ -262,7 +262,7 @@ body {
       width: 35px;
       cursor: pointer;
       &:hover {
-        color: var(--darkened-color);
+        color: var(--lightened-color);
       }
     }
   }
