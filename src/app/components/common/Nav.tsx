@@ -47,6 +47,7 @@ export default function Nav() {
 
   useEffect(() => {
     ChangeMode();
+    isMobile();
   }, []);
 
   if (!isMounted) return null;
