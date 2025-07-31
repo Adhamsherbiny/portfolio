@@ -58,7 +58,7 @@ export default function Nav() {
         <h3>{t("websiteName")}</h3>
       </div>
       <div className="tabs">
-        <ul>
+        <ul id="tabs">
           <li>
             <Link
               onClick={
@@ -125,7 +125,7 @@ export default function Nav() {
                       handelActiveTabs(e.currentTarget);
                     }
               }
-              href=""
+              href="#ourProjects"
               className="nav-tabs"
             >
               {t("ourProjects")}

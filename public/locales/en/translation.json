@@ -73,5 +73,16 @@
   "contactUs": "Contact Us",
   "login": "Login",
   "register": "Sign Up",
-  "bookNow": "Book Now"
+  "bookNow": "Book Now",
+  "projectOneTitle": "Clinica",
+  "projectOneDescription": "A project for managing medical clinics",
+  "projectTwoTitle": "Makadi Highets",
+  "projectTwoDescription": "A project for managing real estate",
+  "projectThreeTitle": "E Business Card",
+  "projectThreeDescription": "A project for managing personal data",
+  "projectFourTitle": "Realestate",
+  "projectFourDescription": "A project for managing real estate",
+  "projectFiveTitle": "Shome & Broug",
+  "projectFiveDescription": "Landing page for a Services company",
+  "visit": "Visit"
 }

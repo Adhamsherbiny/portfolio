@@ -1,5 +1,5 @@
 {
-  "websiteName": "أدهم شربيني",
+  "websiteName": "Adham Sherbiny",
   "mainPage": "الرئيسية",
   "jobDescription": "مطور واجهات أمامية",
   "carrerObjective": "أنا مصمم ومطور ويب محترف بخبرة تمتد لما يقرب من ثلاث سنوات في تطوير مواقع وتطبيقات ويب عالية الجودة. أتمتع بإتقان لغات HTML، CSS، JavaScript، والإطارات الحديثة، وأتخصص في تقديم تصاميم متجاوبة تركز على المستخدم وتجمع بين الجماليات والوظائف. شغفي بالابتكار والتزامي بالتميز يمكّناني من خلق تجارب رقمية سلسة تلبي احتياجات العملاء وتتجاوز توقعاتهم.",
@@ -73,5 +73,16 @@
   "contactUs": "تواصل معنا",
   "login": "تسجيل الدخول",
   "register": "إنشاء حساب",
-  "bookNow": "احجز الآن"
+  "bookNow": "احجز الآن",
+  "projectOneTitle": "تطبيق Clinica",
+  "projectOneDescription": "مشروع لادارة العيادات الطبية",
+  "projectTwoTitle": "Makadi Highets",
+  "projectTwoDescription": "مشروع لادارة المشاريع العقارية",
+  "projectThreeTitle": "E Business Card",
+  "projectThreeDescription": "مشروع يدير بياناتك الشخصية",
+  "projectFourTitle": "Realestate",
+  "projectFourDescription": "مشروع لادارة المشاريع العقارية",
+  "projectFiveTitle": "شموع و بروج",
+  "projectFiveDescription": "مشروع لادارة الخدمات",
+  "visit": "زيارة المشروع"
 }
