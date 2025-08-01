@@ -54,7 +54,7 @@ export default function HomeComponent() {
       <div className="homeComponent" id="home">
         <div className="carrer-objective">
           <div className="pic">
-            <img src="/mypic.jpg" alt="profile-picture" loading="lazy" />
+            <img src="/New Project.png" alt="profile-picture" loading="lazy" />
           </div>
           <div className="text">
             <h1>{t("carrerName")}</h1>

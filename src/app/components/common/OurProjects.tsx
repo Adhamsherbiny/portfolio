@@ -28,7 +28,10 @@ export default function OurProjects() {
       ".ourProjects .projects-container .project"
     );
     timeLine.to(slides, {
-      xPercent: -100 * (slides.length - 1),
+      xPercent:
+        window.getComputedStyle(document.body).direction === "rtl"
+          ? 100 * (slides.length - 1)
+          : -100 * (slides.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: ".ourProjects .projects-container",
